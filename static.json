@@ -1,8 +1,14 @@
 {
-  "routes": [
+  "headers": {
+    "/**": {
+      "Access-Control-Allow-Origin": "*"
+    }
+  },
+  "redirects": [
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "**",
+      "destination": "/index.html",
+      "type": 200
     }
   ]
 }
