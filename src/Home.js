@@ -60,28 +60,25 @@ function Home() {
             Full-Stack Developer & AI/ML Engineer | Founder of Gyanm - The DeepAI (Patent Pending) | Actively Seeking Collaborations & Software Engineering Opportunities
           </p>
           <nav className="home-buttons" aria-label="Main navigation">
-            <a className="btn btn-contact m-2 btn-lg" href="/contact" aria-label="Hire or collaborate with Suraj">
+            <Link className="btn btn-contact m-2 btn-lg" to="/contact" aria-label="Hire or collaborate with Suraj">
               Hire Me / Collaborate
-            </a>
-            <a className="btn btn-projects m-2 btn-lg" href="/projects" aria-label="Explore Suraj's projects">
+            </Link>
+            <Link className="btn btn-projects m-2 btn-lg" to="/projects" aria-label="Explore Suraj's projects">
               Explore Projects
-            </a>
-            <a className="btn btn-skills m-2 btn-lg" href="/skills" aria-label="View Suraj's skills">
+            </Link>
+            <Link className="btn btn-skills m-2 btn-lg" to="/skills" aria-label="View Suraj's skills">
               My Skills
-            </a>
-            <a className="btn btn-about m-2 btn-lg" href="/about" aria-label="Learn more about Suraj">
+            </Link>
+            <Link className="btn btn-about m-2 btn-lg" to="/about" aria-label="Learn more about Suraj">
               About Me
-            </a>
-            <a className="btn btn-achievements m-2 btn-lg" href="/timeline" aria-label="View Suraj's achievements">
+            </Link>
+            <Link className="btn btn-achievements m-2 btn-lg" to="/timeline" aria-label="View Suraj's achievements">
               Achievements
-            </a>
-            <a className="btn btn-admin-posts m-2 btn-lg" href="/admin-posts" aria-label="Admin posts">
+            </Link>
+            <Link className="btn btn-admin-posts m-2 btn-lg" to="/admin-posts" aria-label="Admin posts">
               Admin Posts
-            </a>
+            </Link>
           </nav>
-          <p className="collaboration-pitch">
-            Ready to build groundbreaking AI or software solutions? Let’s connect!
-          </p>
         </header>
 
         <section className="projects-section" aria-labelledby="projects-title">
