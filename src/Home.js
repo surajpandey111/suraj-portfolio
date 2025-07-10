@@ -75,6 +75,9 @@ function Home() {
             <a className="btn btn-achievements m-2 btn-lg" href="/timeline" aria-label="View Suraj's achievements">
               Achievements
             </a>
+            <a className="btn btn-admin-posts m-2 btn-lg" href="/admin-posts" aria-label="Admin posts">
+              Admin Posts
+            </a>
           </nav>
           <p className="collaboration-pitch">
             Ready to build groundbreaking AI or software solutions? Let’s connect!

@@ -29,6 +29,7 @@ function App() {
               <li className="nav-item"><Link className="nav-link" to="/projects">Projects</Link></li>
               <li className="nav-item"><Link className="nav-link" to="/skills">Skills</Link></li>
               <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
+              <li className="nav-item"><Link className="nav-link" to="/admin-posts">Admin Posts</Link></li>
             </ul>
           </div>
         </div>
