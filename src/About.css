@@ -1,0 +1,233 @@
+.about-container {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #0a0a1a 0%, #151533 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-attachment: fixed;
+  background-position: center;
+  transition: transform 0.1s ease-out;
+}
+
+.about-container:hover .parallax-background {
+  transform: translateY(-5px);
+}
+
+.about-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2.5rem;
+}
+
+.about-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image {
+  max-width: 250px;
+  border-radius: 50%;
+  border: 4px solid #0d6efd;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* For tech glow */
+}
+
+.about-image::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  background: radial-gradient(circle, rgba(0, 215, 235, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: techGlow 4s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+@keyframes techGlow {
+  from { transform: scale(0.9); opacity: 0.7; }
+  to { transform: scale(1.1); opacity: 0.3; }
+}
+
+.about-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(0, 123, 255, 0.7);
+}
+
+.about-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 0 0 20px #00ddeb, 0 0 40px #007bff;
+  animation: neonPulse 3s ease-in-out infinite alternate;
+}
+
+@keyframes neonPulse {
+  from { text-shadow: 0 0 20px #00ddeb, 0 0 40px #007bff; }
+  to { text-shadow: 0 0 30px #00ddeb, 0 0 60px #007bff; }
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+  color: #e0e0ff;
+  margin-bottom: 2rem;
+}
+
+.about-section-title {
+  font-size: 2rem;
+  color: #00ddeb;
+  margin-top: 2rem;
+  text-shadow: 0 0 10px #00ddeb;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.about-list li {
+  font-size: 1.1rem;
+  color: #e0e0ff;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.about-list li::before {
+  content: "▸";
+  color: #00ddeb;
+  position: absolute;
+  left: 0;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: #e0e0ff;
+  margin-bottom: 2rem;
+}
+
+.about-achievements {
+  margin-top: 2rem;
+}
+
+.about-achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-achievements ul li {
+  font-size: 1.1rem;
+  color: #e0e0ff;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.about-achievements ul li::before {
+  content: "★";
+  color: #ffd700;
+  position: absolute;
+  left: 0;
+}
+
+.about-content .btn {
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-content .btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+}
+
+.collaboration-section {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.collaboration-section h2 {
+  font-size: 2rem;
+  color: #00ddeb;
+  text-shadow: 0 0 10px #00ddeb;
+}
+
+.collaboration-section p {
+  font-size: 1.1rem;
+  color: #e0e0ff;
+  margin-bottom: 1.5rem;
+}
+
+.collaboration-section .btn {
+  margin: 0 0.5rem;
+}
+
+/* Tech Particle Animation */
+#tech-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .about-image {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 2.5rem 1rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-image {
+    max-width: 150px;
+  }
+}
