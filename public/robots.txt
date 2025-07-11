@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
-Sitemap: https://suraj-portfolio.onrender.com/sitemap.xml
+Sitemap: https://suraj-portfolio-dmhx.onrender.com/sitemap.xml
