@@ -7,6 +7,7 @@ import {
   faDatabase,
   faAward,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 function Home() {
@@ -79,6 +80,9 @@ function Home() {
               Admin Posts
             </Link>
           </nav>
+          <p className="collaboration-pitch">
+            Ready to build groundbreaking AI or software solutions? Let’s connect!
+          </p>
         </header>
 
         <section className="projects-section" aria-labelledby="projects-title">
