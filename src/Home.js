@@ -234,7 +234,7 @@ function Home() {
               Hire Me
             </Link>
             <a
-              href="https://github.com/suraipandey111"
+              href="https://github.com/surajpandey111/"
               className="btn btn-primary btn-lg"
               target="_blank"
               rel="noopener noreferrer"
