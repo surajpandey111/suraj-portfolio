@@ -103,15 +103,13 @@ function Home() {
                   Voice-driven AI assistant for coding and data retrieval. (Built with Django, Python, OpenCV)
                 </p>
                 <p className="impact-text">Featured in Google AI Gatherings 2024.</p>
-                <a
-                  href="/projects"
+                <Link
+                  to="/projects"
                   className="btn btn-primary btn-highlight"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   aria-label="Watch Alexander AI demo and try it"
                 >
                   Watch & Try Now
-                </a>
+                </Link>
               </div>
             </article>
             <article className="home-card">
@@ -129,15 +127,13 @@ function Home() {
                   7 AI/ML models predicting mineral zones with 4x accuracy. (Built with Flask, React, Scikit-learn)
                 </p>
                 <p className="impact-text">Identified 501 high-potential zones for Govt. of India.</p>
-                <a
-                  href="/projects"
+                <Link
+                  to="/projects"
                   className="btn btn-primary btn-highlight"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   aria-label="View mineral targeting project on GitHub and try it"
                 >
                   View & Try Now
-                </a>
+                </Link>
               </div>
             </article>
             <article className="home-card">
@@ -155,21 +151,19 @@ function Home() {
                   RAG-powered chatbot for scholarship queries. (Built with Streamlit, FAISS, HuggingFace)
                 </p>
                 <p className="impact-text">Serving 5000+ students in UP.</p>
-                <a
-                  href="/projects"
+                <Link
+                  to="/projects"
                   className="btn btn-primary btn-highlight"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   aria-label="Try AI-powered schemes chatbot now"
                 >
                   Try It Now
-                </a>
+                </Link>
               </div>
             </article>
           </div>
-          <a href="/projects" className="btn btn-projects btn-lg view-all-btn btn-highlight" aria-label="View all projects">
+          <Link to="/projects" className="btn btn-projects btn-lg view-all-btn btn-highlight" aria-label="View all projects">
             View All Projects
-          </a>
+          </Link>
         </section>
 
         <section className="skills-section" aria-labelledby="skills-title">
@@ -196,9 +190,9 @@ function Home() {
               <p>Pandas, NumPy, Scikit-learn, Geospatial Analysis (GDAL, QGIS)</p>
             </div>
           </div>
-          <a href="/skills" className="btn btn-skills btn-lg" aria-label="View full skillset">
+          <Link to="/skills" className="btn btn-skills btn-lg" aria-label="View full skillset">
             See Full Skillset
-          </a>
+          </Link>
         </section>
 
         <section className="achievements-section" aria-labelledby="achievements-title">
@@ -225,9 +219,9 @@ function Home() {
               <p>3 consecutive years of entrepreneurship excellence.</p>
             </div>
           </div>
-          <a href="/timeline" className="btn btn-achievements btn-lg" aria-label="View full achievements timeline">
+          <Link to="/timeline" className="btn btn-achievements btn-lg" aria-label="View full achievements timeline">
             View Full Timeline
-          </a>
+          </Link>
         </section>
 
         <section className="collaboration-section" aria-labelledby="collaboration-title">
@@ -236,9 +230,9 @@ function Home() {
             I’m a passionate AI/ML and full-stack developer ready to tackle your next software engineering project. Open to remote/onsite roles, freelancing ($30–$50/hour), or collaborative ventures with Gyanm.
           </p>
           <div className="collaboration-buttons">
-            <a href="/contact" className="btn btn-contact btn-lg" aria-label="Hire Suraj">
+            <Link to="/contact" className="btn btn-contact btn-lg" aria-label="Hire Suraj">
               Hire Me
-            </a>
+            </Link>
             <a
               href="https://github.com/suraipandey111"
               className="btn btn-primary btn-lg"
@@ -248,15 +242,9 @@ function Home() {
             >
               View My GitHub
             </a>
-            <a
-              href="/projects"
-              className="btn btn-primary btn-lg"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Explore Gyanm - The DeepAI"
-            >
+            <Link to="/projects" className="btn btn-primary btn-lg" aria-label="Explore Gyanm - The DeepAI">
               Explore All Projects
-            </a>
+            </Link>
           </div>
         </section>
       </main>
