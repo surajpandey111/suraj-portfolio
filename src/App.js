@@ -77,6 +77,7 @@ function App() {
       <footer className="app-footer">
         <div className="footer-content">
           <p className="footer-text">© 2025 <strong>Suraj Kumar Pandey</strong> — Government Engineer. All rights reserved.</p>
+          <p className="footer-text"> Made with ❤️ by Suraj Kumar Pandey</p>
           <div className="footer-social">
             <a href="https://github.com/surajpandey111/" target="_blank" rel="noopener noreferrer" title="GitHub">
               <img src="/github-icon.jpg" alt="GitHub" className="social-icon" loading="lazy" />
