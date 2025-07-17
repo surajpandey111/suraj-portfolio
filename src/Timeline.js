@@ -22,6 +22,12 @@ function Timeline() {
       details: "Promoted student engagement and technical events"
     },
     {
+      year: "2022–2023",
+      title: "<S.D(Software Development), Game Theory, Mech. Design, E&P ML (Xarray, Plotly)",
+      place: "IIT Bombay",
+      details: "Attended workshops on advanced software development and machine learning"
+    },
+    {
       year: "2023–2025",
       title: "T&P Coordinator",
       place: "GEC Azamgarh",

@@ -68,7 +68,7 @@ function About() {
           <div className="about-text">
             <h1 className="about-title">Hi, I’m Suraj Kumar Pandey</h1>
             <p className="about-subtitle">
-              Polymathic AI/ML & Full-Stack Developer, founder (CEO & CTO) of <span className="text-success">Gyanm: The DeepAI</span>, India’s first AI productivity platform (prototype, patent pending).
+              Polymathic AI/ML & Full-Stack Developer, founder (CEO & CTO) of <span className="text-success">Gyanm: The DeepAI & SurajTechLabs(AI Services Platform)</span>, India’s first AI productivity platform (prototype, patent pending).
             </p>
             <h2 className="about-section-title">My Mission</h2>
             <p className="about-description">
@@ -93,6 +93,7 @@ function About() {
             <div className="about-achievements">
               <ul>
                 <li>TechFest Medalist, IIT Bombay (2022-2023) for innovative tech solutions.</li>
+                <li>S.D, Game Theory, Mech. Design, E&P ML (Xarray, Plotly), IIT Bombay (2022-2023) for innovative tech solutions.</li>
                 <li>Invited to Google AI Gatherings 2024 for AI productivity innovations.</li>
                 <li>DM Officials Award, Azamgarh, for AI contributions.</li>
                 <li>3-Time E-CELL Awards Winner, GEC Azamgarh (2023-2025) for entrepreneurship.</li>
