@@ -105,6 +105,33 @@
   filter: drop-shadow(0 0 10px #5f8d90) brightness(1.5); /* Enhanced neon hover effect */
 }
 
+/* Scrolling Slit */
+.scrolling-slit {
+  height: 20px; /* Thin slit height */
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center; /* Vertically center the text */
+}
+
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollText 14s linear infinite;
+  color: #00ffcc; /* Vibrant neon cyan-green */
+  font-size: 0.75rem; /* Slightly reduced for better fit */
+  padding: 0 10px;
+  line-height: 20px; /* Match slit height to touch base visually */
+  text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc; /* Neon glow effect */
+}
+
+@keyframes scrollText {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
 /* Accessibility and Performance */
 :focus {
   outline: 2px solid #00ddeb;
@@ -113,7 +140,9 @@
 
 @media (prefers-reduced-motion: reduce) {
   .navbar-nav .nav-link,
-  .social-icon {
+  .social-icon,
+  .scrolling-text {
+    animation: none;
     transition: none;
   }
 }
