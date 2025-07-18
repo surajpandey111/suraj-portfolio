@@ -23,7 +23,7 @@ function Timeline() {
     },
     {
       year: "2022–2023",
-      title: "<S.D(Software Development), Game Theory, Mech. Design, E&P ML (Xarray, Plotly)",
+      title: "S.D, Game Theory, Mech. Design, E&P ML (Xarray, Plotly)",
       place: "IIT Bombay",
       details: "Attended workshops on advanced software development and machine learning"
     },
