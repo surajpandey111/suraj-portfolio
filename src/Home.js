@@ -58,7 +58,7 @@ function Home() {
           />
           <h1 className="home-title">Suraj Kumar Pandey: Crafting AI-Powered Solutions for Global Impact</h1>
           <p className="home-subtitle">
-            Full-Stack Developer & AI/ML Engineer | Founder of Gyanm - The DeepAI (Patent Pending) & SurajTechLabs(AI Software Development/Reserch Labs) | Actively Seeking Collaborations & Software Engineering Opportunities
+            Full-Stack Developer & AI/ML Engineer | Founder of Gyanm - The DeepAI (Patent Pending) & SurajTechLabs(AI Software Development/Research Labs) | Actively Seeking Collaborations & Software Engineering Opportunities
           </p>
           <nav className="home-buttons" aria-label="Main navigation">
             <Link className="btn btn-contact m-2 btn-lg" to="/contact" aria-label="Hire or collaborate with Suraj">
