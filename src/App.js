@@ -25,9 +25,11 @@ import React from "react";
         <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: '#2c3e50', minHeight: '60px' }}>
           <div className="container-fluid">
             <Link className="navbar-brand fw-bold" to="/">Suraj Home</Link>
-            <span className="navbar-text mx-3" style={{ color: '#00ddeb', backgroundColor: 'rgba(0, 221, 235, 0.2)', padding: '5px 10px', borderRadius: '5px' }}>
-            SurajTechLabs - portfolio platform
-          </span>
+             <div className="navbar-center-text">
+            <span className="navbar-text" style={{ color: '#ec1b8eff', backgroundColor: 'rgba(0, 221, 235, 0.2)', padding: '5px 10px', borderRadius: '5px' }}>
+              SurajTechLabs - portfolio platform
+            </span>
+          </div>
             <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -46,7 +48,7 @@ import React from "react";
 
         <div className="scrolling-slit">
           <div className="scrolling-text">
-            Service of AI Development Start, Full Stack Website Development, LLMs Development, Custom AI Models Development, SaaS Model etc at Large Discount Contact Me
+            Service of AI Development Start, Full Stack Website Development, LLMs Development, Custom AI Models Development, SaaS Model,All types of software Products Development even complex etc at Large Discount Contact Me
           </div>
         </div>
 
