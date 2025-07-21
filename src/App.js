@@ -25,6 +25,9 @@ import React from "react";
         <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: '#2c3e50', minHeight: '60px' }}>
           <div className="container-fluid">
             <Link className="navbar-brand fw-bold" to="/">Suraj Home</Link>
+            <span className="navbar-text mx-3" style={{ color: '#00ddeb', backgroundColor: 'rgba(0, 221, 235, 0.2)', padding: '5px 10px', borderRadius: '5px' }}>
+            SurajTechLabs - portfolio platform
+          </span>
             <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
               <span className="navbar-toggler-icon"></span>
             </button>
