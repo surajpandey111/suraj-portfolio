@@ -151,7 +151,7 @@
 .navbar-center-text {
   flex-grow: 1;
   display: flex;
-  justify-content:right;
+  justify-content:center;
   align-items: center;
 }
 
