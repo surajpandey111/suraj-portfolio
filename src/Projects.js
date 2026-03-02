@@ -44,6 +44,18 @@ function Projects() {
       live: "https://rec-azamgarh-chatbot.streamlit.app/"
     },
     {
+      name: "IndiaAI Launch Portal",
+      description: "AI-powered launch & innovation portal deployed on Render for IndiaAI initiatives and digital transformation programs.",
+      image: "/indiaai.jpg",
+      live: "https://indiaai-launch-portal-recazamgarh.onrender.com/"
+    },
+    {
+      name: "Cooking Agentic AI",
+      description: "Multimodal intelligent recipe generation system built using Streamlit. Generates smart recipes from ingredients and prompts.",
+      image: "/cooking-ai.jpg",
+      live: "https://smart-cook-ai.streamlit.app/"
+    },
+    {
       name: "Alexander AI Assistant",
       description: "Voice-driven Django-based assistant with advanced queries.",
       image: "/alexander.jpg",
