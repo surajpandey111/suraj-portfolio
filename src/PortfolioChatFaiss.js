@@ -15,24 +15,32 @@ function PortfolioChatFaiss() {
 
     
 
-    try {
-      const res = await fetch("https://faiss-portfolio-chatbot.onrender.com/search", {
-      //const res = await fetch("https://ai-chatbot-465020.el.r.appspot.com/search", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ question: input })
-      });
-      const data = await res.json();
-      const botMsg = { text: data.answer, sender: "bot" };
-      setMessages(prev => [...prev, botMsg]);
-    } catch (err) {
-      console.error(err);
-      setMessages(prev => [
-        ...prev,
-        { text: "❌ Error connecting to AI server.", sender: "bot" }
-      ]);
+     try {
+    const res = await fetch("https://faiss-portfolio-chatbot.onrender.com/search", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ question: input })
+    });
+
+    if (!res.ok) {
+      throw new Error("Server returned status " + res.status);
     }
-  };
+
+    const data = await res.json();
+
+    setMessages(prev => [
+      ...prev,
+      { text: data.answer || "No response from server.", sender: "bot" }
+    ]);
+
+  } catch (error) {
+    console.error("Fetch error:", error);
+    setMessages(prev => [
+      ...prev,
+      { text: "❌ Server unreachable. It may be waking up. Try again in 30 seconds.", sender: "bot" }
+    ]);
+  }
+};
 
   return (
     <div>
@@ -111,3 +119,4 @@ function PortfolioChatFaiss() {
 }
 
 export default PortfolioChatFaiss;
+
