@@ -5,10 +5,10 @@ import "./Projects.css";
 function Projects() {
   const projects = [
     {
-      name: "Gyanm: The DeepAI",
+      name: "AI-HUB Multi Domain",
       description: "India’s first homegrown AI platform for text, coding, research, and automation.",
       image: "/gyanm.jpg",
-      live: "https://researchai-gpt.onrender.com/",
+      live: "https://ai-hub-multidomain.onrender.com",
       youtube: "https://youtu.be/2VCIfdPtp6w"
     },
     {
@@ -281,5 +281,6 @@ function Projects() {
     </div>
   );
 }
+
 
 export default Projects;
