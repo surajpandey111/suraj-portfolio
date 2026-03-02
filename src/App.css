@@ -119,7 +119,7 @@
 .scrolling-text {
   display: inline-block;
   white-space: nowrap;
-  animation: scrollText 14s linear infinite;
+  animation: scrollText 10s linear infinite;
   color: #00ffcc; /* Vibrant neon cyan-green */
   font-size: 0.75rem; /* Slightly reduced for better fit */
   padding: 0 10px;
