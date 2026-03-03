@@ -7,8 +7,10 @@ import React from "react";
   import Timeline from "./Timeline";
   import Contact from "./Contact";
   import Skills from "./Skills";
+  import AdsLanding from "./AdsLanding";
   import Projects from "./Projects";
   import Home from "./Home";
+  import Booking from "./Booking";
   import NotFound from "./NotFound";
   import "./App.css";
   import "slick-carousel/slick/slick.css";
@@ -26,9 +28,18 @@ import React from "react";
           <div className="container-fluid">
             <Link className="navbar-brand fw-bold" to="/">Suraj Home</Link>
              <div className="navbar-center-text">
-            <span className="navbar-text" style={{ color: '#ec1b8eff', backgroundColor: 'rgba(0, 221, 235, 0.2)', padding: '5px 10px', borderRadius: '5px' }}>
-              SurajTechLabs - portfolio platform
-            </span>
+            <Link 
+                to="/" 
+                className="navbar-text text-decoration-none"
+                style={{ 
+                  color: '#ec1b8eff', 
+                  backgroundColor: 'rgba(0, 221, 235, 0.2)', 
+                  padding: '5px 10px', 
+                  borderRadius: '5px' 
+                }}
+              >
+                SurajTechLabs - Portfolio Platform
+          </Link>
           </div>
             <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
               <span className="navbar-toggler-icon"></span>
@@ -36,6 +47,7 @@ import React from "react";
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
+                <li className="nav-item"><Link className="nav-link" to="/booking">Book Development</Link></li>
                 <li className="nav-item"><Link className="nav-link" to="/timeline">Timeline</Link></li>
                 <li className="nav-item"><Link className="nav-link" to="/projects">Projects</Link></li>
                 <li className="nav-item"><Link className="nav-link" to="/skills">Skills</Link></li>
@@ -72,9 +84,11 @@ import React from "react";
         </button>
 
         <div className="main-content">
+          <AdsLanding />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/booking" element={<Booking />} />
             <Route path="/timeline" element={<Timeline />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />

@@ -120,6 +120,7 @@
 .home-buttons .btn-skills { background: linear-gradient(90deg, var(--accent-yellow), #12110df3); }
 .home-buttons .btn-about { background: linear-gradient(90deg, #00c4cc, #110a0de0); }
 .home-buttons .btn-achievements { background: linear-gradient(90deg, var(--secondary-color), #828b95); }
+.home-buttons .btn-booking { background: linear-gradient(90deg, var(--secondary-color), #bc0ea5); }
 .home-buttons .btn-admin-posts { background: linear-gradient(90deg, #dc3545, #1d0f10); }
 
 /* Projects Section */

@@ -76,6 +76,9 @@ function Home() {
             <Link className="btn btn-achievements m-2 btn-lg" to="/timeline" aria-label="View Suraj's achievements">
               Achievements
             </Link>
+            <Link className="btn btn-booking m-2 btn-lg" to="/booking">
+              Book Development
+            </Link>
             <Link className="btn btn-admin-posts m-2 btn-lg" to="/admin-posts" aria-label="Admin posts">
               Admin Posts
             </Link>
