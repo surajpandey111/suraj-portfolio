@@ -68,8 +68,8 @@ import React from "react";
           onClick={() => window.open("https://portfolio-suraj-ai.streamlit.app/", "_blank")}
           style={{
             position: "fixed",
-            top: 50,
-            left: 20,
+            top: 100,          // little lower so not touching navbar
+            right: 20,         // ✅ moved to right side
             background: "#007bff",
             color: "#fff",
             borderRadius: "50%",
@@ -77,11 +77,13 @@ import React from "react";
             height: 60,
             border: "none",
             fontSize: "24px",
-            zIndex: 999
-          }}
+            zIndex: 9999,
+            boxShadow: "0 0 15px rgba(0,123,255,0.7)",
+            cursor: "pointer"
+        }}
         >
-          🤖
-        </button>
+       🤖
+      </button>
 
         <div className="main-content">
           <AdsLanding />
