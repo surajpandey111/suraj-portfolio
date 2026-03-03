@@ -65,7 +65,7 @@ function AdsLanding() {
         </h1>
 
         <p className="ads-subtitle">
-          🇮🇳 Government of India Certified AI Trainer (NIELIT) <br />
+          🇮🇳 Government of India Certified AI Researcher (NIELIT) <br />
           Government Engineer – IT Domain <br />
           IndiaAI Summit Participant
         </p>
@@ -79,7 +79,7 @@ function AdsLanding() {
         </div>
 
         <div className="cert-highlight">
-          Govt of India Certificate – AI Trainer from NIELIT
+          Govt of India/Govt of UP Scientist – AI Researcher from NIELIT
         </div>
 
         <div className="ads-projects">
