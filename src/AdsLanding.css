@@ -1,3 +1,5 @@
+/* ================= OVERLAY BACKGROUND ================= */
+
 .ads-overlay {
   position: fixed;
   top: 0;
@@ -7,151 +9,16 @@
   background: radial-gradient(circle at center, #000428, #000);
   z-index: 9999;
   overflow-y: auto;
-  color: white;
+  -webkit-overflow-scrolling: touch;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeIn 0.6s ease;
-  padding: 2rem;
-}
-
-.ads-glow-bg {
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(0, 221, 235, 0.4), transparent);
-  animation: pulse 4s infinite alternate;
-}
-
-@keyframes pulse {
-  from { transform: scale(0.8); }
-  to { transform: scale(1.2); }
-}
-
-.ads-content {
-  position: relative;
-  max-width: 1000px;
-  text-align: center;
-  z-index: 2;
-}
-
-.limited-banner {
-  background: linear-gradient(90deg, #ff0000, #ff4b2b);
-  padding: 8px 20px;
-  border-radius: 25px;
-  display: inline-block;
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
-
-.ads-title {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 20px #00ddeb;
-}
-
-.ads-subtitle {
-  margin-bottom: 1rem;
-  color: #ccc;
-}
-
-.countdown {
-  font-size: 1.3rem;
-  margin-bottom: 1.5rem;
-  font-weight: bold;
-  color: #ffcc00;
-}
-
-.ads-slider img {
-  height: 280px;
-  border-radius: 15px;
-  margin-bottom: 1.5rem;
-  transition: opacity 0.5s ease;
-}
-
-.cert-highlight {
-  margin: 15px 0;
-  font-weight: bold;
-  color: #ffcc00;
-  font-size: 1.1rem;
-}
-
-.ads-projects {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 2rem 0;
-  flex-wrap: wrap;
-}
-
-.ads-projects a {
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-}
-
-.ads-projects img {
-  height: 130px;
-  border-radius: 10px;
-  margin-bottom: 8px;
-  transition: 0.3s;
-}
-
-.ads-projects img:hover {
-  transform: scale(1.05);
-}
-
-.ads-cta-btn {
-  display: inline-block;
-  padding: 1rem 2.5rem;
-  background: linear-gradient(90deg, #00ddeb, #007bff);
-  border-radius: 40px;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-  font-size: 1.1rem;
-  transition: 0.3s ease;
-}
-
-.ads-cta-btn:hover {
-  transform: scale(1.08);
-  box-shadow: 0 0 25px #00ddeb;
-}
-
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-.ads-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at center, #000428, #000);
-  z-index: 9999;
-  overflow-y: auto;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: fadeIn 0.6s ease;
   padding: 20px;
+  animation: fadeIn 0.6s ease;
+  color: white;
 }
 
+/* glowing background */
 .ads-glow-bg {
   position: absolute;
   width: 500px;
@@ -160,10 +27,7 @@
   animation: pulse 4s infinite alternate;
 }
 
-@keyframes pulse {
-  from { transform: scale(0.9); }
-  to { transform: scale(1.2); }
-}
+/* ================= CONTENT ================= */
 
 .ads-content {
   position: relative;
@@ -173,7 +37,8 @@
   z-index: 2;
 }
 
-/* banner */
+/* ================= LIMITED BANNER ================= */
+
 .limited-banner {
   background: linear-gradient(90deg,#ff0000,#ff4b2b);
   padding: 8px 18px;
@@ -184,14 +49,16 @@
   font-size: 14px;
 }
 
-/* title */
+/* ================= TITLE ================= */
+
 .ads-title {
   font-size: 2.2rem;
   margin-bottom: 12px;
   text-shadow: 0 0 18px #00ddeb;
 }
 
-/* subtitle */
+/* ================= SUBTITLE ================= */
+
 .ads-subtitle {
   margin-bottom: 10px;
   color: #ccc;
@@ -199,7 +66,8 @@
   line-height: 1.5;
 }
 
-/* timer */
+/* ================= COUNTDOWN ================= */
+
 .countdown {
   font-size: 1.2rem;
   margin-bottom: 18px;
@@ -207,16 +75,23 @@
   color: #ffcc00;
 }
 
-/* slider image */
+/* ================= IMAGE SLIDER ================= */
+
 .ads-slider img {
   width: 100%;
   max-width: 450px;
   height: auto;
   border-radius: 15px;
   margin-bottom: 15px;
+  transition: transform 0.3s ease;
 }
 
-/* certificate highlight */
+.ads-slider img:hover {
+  transform: scale(1.03);
+}
+
+/* ================= CERTIFICATE HIGHLIGHT ================= */
+
 .cert-highlight {
   margin: 15px 0;
   font-weight: bold;
@@ -224,7 +99,8 @@
   font-size: 1rem;
 }
 
-/* project cards */
+/* ================= PROJECT CARDS ================= */
+
 .ads-projects {
   display: flex;
   justify-content: center;
@@ -245,14 +121,15 @@
   height: auto;
   border-radius: 10px;
   margin-bottom: 8px;
-  transition: 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .ads-projects img:hover {
   transform: scale(1.05);
 }
 
-/* CTA button */
+/* ================= CTA BUTTON ================= */
+
 .ads-cta-btn {
   display: inline-block;
   padding: 14px 30px;
@@ -262,7 +139,7 @@
   text-decoration: none;
   color: white;
   font-size: 1.1rem;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .ads-cta-btn:hover {
@@ -270,7 +147,8 @@
   box-shadow: 0 0 20px #00ddeb;
 }
 
-/* close button */
+/* ================= CLOSE BUTTON ================= */
+
 .close-btn {
   position: fixed;
   top: 18px;
@@ -280,22 +158,28 @@
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  font-weight: bold;
   font-size: 18px;
+  font-weight: bold;
   cursor: pointer;
   z-index: 10000;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
-/* animation */
+/* ================= ANIMATIONS ================= */
+
 @keyframes fadeIn {
-  from {opacity:0;}
-  to {opacity:1;}
+  from { opacity:0; }
+  to { opacity:1; }
 }
 
-/* ---------------- MOBILE OPTIMIZATION ---------------- */
+@keyframes pulse {
+  from { transform: scale(0.9); }
+  to { transform: scale(1.2); }
+}
 
-@media (max-width: 768px) {
+/* ================= TABLET ================= */
+
+@media (max-width: 768px){
 
   .ads-title{
     font-size: 1.7rem;
@@ -314,33 +198,39 @@
   }
 
   .ads-projects{
-    gap:15px;
+    gap: 15px;
   }
 
   .ads-projects img{
-    width:100px;
+    width: 100px;
   }
 
   .ads-cta-btn{
-    font-size:1rem;
-    padding:12px 22px;
+    font-size: 1rem;
+    padding: 12px 22px;
   }
 
 }
 
-@media (max-width:480px){
+/* ================= MOBILE ================= */
+
+@media (max-width: 480px){
 
   .ads-title{
-    font-size:1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .ads-subtitle{
+    font-size: 13px;
   }
 
   .ads-projects{
-    flex-direction:column;
-    align-items:center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .ads-projects img{
-    width:120px;
+    width: 120px;
   }
 
 }
